@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Me</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./images/logo.jpg" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <hr>
+        <span id="space"><br><br></span>
+        <div class="row">
+            <div class="col-1 line-1">
+                <h2>Home Service</h2>
+                <h3>Delivery and Cleaning</h3>
+                <p>Specify Custom Services</p>
+                <h4>Starting Price: $99.99</h4>
+                <button type="button">Select Service  <img alt=""></button>
+            </div>
+            <div class="col-2">
+                <img src="./images/del-dr.webp" class="driver">
+                <div class="color-box-1"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1 line-2">
+                <h2>Corporate Service</h2>
+                <h3>Marketing, Delivery & Logistics</h3>
+                <p>Specify Custom Services</p>
+                <h4>Starting Price: $209.99</h4>
+                <button type="button">Select Service  <img alt=""></button>
+            </div>
+            <div class="col-2">
+                <img src="./images/lady.jpg" class="driver">
+                <div class="color-box-2"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1 line-3">
+                <h2>International Service</h2>
+                <h3>Freight, Shipping & Logistics</h3>
+                <p>Specify Custom Services</p>
+                <h4>Starting Price: $559.99</h4>
+                <button type="button">Select Service<img alt=""></button>
+            </div>
+            <div class="col-2">
+                <img src="./images/freight.png" class="driver">
+                <div class="color-box-3"></div>
+            </div>
+        </div>
+
+        <div class="socials">
+            <img src="./images/fb.png" alt="">
+            <img src="./images/gmail.png" alt="">
+            <img src="./images/inst.png" alt="">
+            <img src="./images/linkd.png" alt="">
+            <img src="./images/telg.png" alt="">
+            <img src="./images/twi.png" alt="">
+            <img src="./images/whtp.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        var menuList = document.getElementById('menuList');
+
+        menuList.style.maxHeight = "0px";
+        function togglemenu() {
+            if (menuList.style.maxHeight === "0px") {
+                menuList.style.maxHeight = "130px";
+            }   else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
